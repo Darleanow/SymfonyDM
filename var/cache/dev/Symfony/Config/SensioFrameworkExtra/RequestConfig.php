@@ -14,7 +14,11 @@ class RequestConfig
     private $autoConvert;
     private $disable;
     private $_usedProperties = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
     /**
      * @default true
      * @param ParamConfigurator|bool $value
@@ -24,10 +28,17 @@ class RequestConfig
     {
         $this->_usedProperties['converters'] = true;
         $this->converters = $value;
+<<<<<<< HEAD
     
         return $this;
     }
     
+=======
+
+        return $this;
+    }
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
     /**
      * @default true
      * @param ParamConfigurator|bool $value
@@ -37,10 +48,17 @@ class RequestConfig
     {
         $this->_usedProperties['autoConvert'] = true;
         $this->autoConvert = $value;
+<<<<<<< HEAD
     
         return $this;
     }
     
+=======
+
+        return $this;
+    }
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
     /**
      * @param ParamConfigurator|list<ParamConfigurator|mixed> $value
      *
@@ -50,10 +68,17 @@ class RequestConfig
     {
         $this->_usedProperties['disable'] = true;
         $this->disable = $value;
+<<<<<<< HEAD
     
         return $this;
     }
     
+=======
+
+        return $this;
+    }
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
     public function __construct(array $value = [])
     {
         if (array_key_exists('converters', $value)) {
@@ -61,24 +86,40 @@ class RequestConfig
             $this->converters = $value['converters'];
             unset($value['converters']);
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
         if (array_key_exists('auto_convert', $value)) {
             $this->_usedProperties['autoConvert'] = true;
             $this->autoConvert = $value['auto_convert'];
             unset($value['auto_convert']);
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
         if (array_key_exists('disable', $value)) {
             $this->_usedProperties['disable'] = true;
             $this->disable = $value['disable'];
             unset($value['disable']);
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
         if ([] !== $value) {
             throw new InvalidConfigurationException(sprintf('The following keys are not supported by "%s": ', __CLASS__).implode(', ', array_keys($value)));
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
     public function toArray(): array
     {
         $output = [];
@@ -91,7 +132,11 @@ class RequestConfig
         if (isset($this->_usedProperties['disable'])) {
             $output['disable'] = $this->disable;
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
         return $output;
     }
 

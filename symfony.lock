@@ -58,7 +58,11 @@
             "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
         },
         "files": [
+<<<<<<< HEAD
             "./config/packages/sensio_framework_extra.yaml"
+=======
+            "config/packages/sensio_framework_extra.yaml"
+>>>>>>> fd6f3db (PDO INCLUDE MYSQL)
         ]
     },
     "symfony/console": {
