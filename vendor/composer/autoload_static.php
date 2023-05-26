@@ -103,6 +103,7 @@ class ComposerStaticInitcc086670e70d9c685fd16cbf6982e8f1
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
         'P' => 
         array (
@@ -431,6 +432,10 @@ class ComposerStaticInitcc086670e70d9c685fd16cbf6982e8f1
         'Symfony\\Bridge\\Doctrine\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
+        ),
+        'Sensio\\Bundle\\FrameworkExtraBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sensio/framework-extra-bundle/src',
         ),
         'Psr\\Log\\' => 
         array (
